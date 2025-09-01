@@ -1,6 +1,7 @@
 import datetime
 from datetime import datetime, timedelta, timezone
 
+from services.task_priority_calculator import TaskPriorityCalculator
 from entities.task import Task
 from value_objects import Deadline, Priority
 
@@ -14,4 +15,5 @@ task = Task(
         )
 )
 
-print(task)
+asd = TaskPriorityCalculator.calculate_priority(task)
+
