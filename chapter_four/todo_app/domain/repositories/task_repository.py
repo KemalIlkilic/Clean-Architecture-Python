@@ -1,3 +1,5 @@
+#“This abstract class defines the contract for task persistence without specifying any implementation details
+
 from abc import ABC, abstractmethod
 from todo_app.domain.entities.task import Task
 class TaskRepository(ABC):
