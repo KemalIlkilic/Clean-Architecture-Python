@@ -1,3 +1,6 @@
+#This TaskService demonstrates how domain logic can interact with the persistence abstraction without knowing anything about the actual storage mechanism.
+#The concrete implementation of the TaskRepository would reside in an outer layer, such as the Infrastructure layer:
+
 from todo_app.domain.entities.task import Task
 from todo_app.domain.repositories.task_repository import TaskRepository
 
