@@ -21,15 +21,4 @@ class Task(Entity):
     def is_overdue(self) -> bool:
         return self.due_date is not None and self.due_date.is_overdue()
 
-# Usage
-# Create a new task
-task = Task(
-    title="Complete project proposal",
-    description="Draft and review the proposal for the new client project",
-    priority=Priority.HIGH
-)
-# Check task properties
-print(task.title) # "Complete project proposal"
-print(task.priority) # Priority.HIGH
-print(task.status) # TaskStatus.TODO”
 
